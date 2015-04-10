@@ -65,58 +65,21 @@
 			*/
 			layer0= new OpenLayers.Layer.OSM( "Simple OSM Map");
 					
-			layer1 = new OpenLayers.Layer.Social.Twitter("Twitter",{
+						
+			layer3 = new OpenLayers.Layer.Social.POIProxy("Flickr (POIProxy)","flickr",{
 				styleMap: new OpenLayers.StyleMap({
-					externalGraphic: 'img/twitter_fugue.png',
+					externalGraphic: 'img/flickr.png',
 					pointRadius: 8
 				})
 			});
 			
-			layer2 = new OpenLayers.Layer.Social.Flickr("Flickr","b3a77fdabcdf31ea15266ccffbb353c0",{});
-			
-			layer3 = new OpenLayers.Layer.Social.POIProxy("Gowalla (POIProxy)","gowalla",{
-				styleMap: new OpenLayers.StyleMap({
-					externalGraphic: 'img/gowalla.png',
-					pointRadius: 8
-				})
-			});
-			
-			layer4 = new OpenLayers.Layer.Social.Lastfm("Lastfm","b25b959554ed76058ac220b7b2e0a026",{
-				styleMap: new OpenLayers.StyleMap({
-					externalGraphic: 'img/lastfm.png',
-					pointRadius: 8
-				})
-			});
-			
-			layer5 = new OpenLayers.Layer.Social.Yelp("Yelp","s38_h6eGpQk1Ka8PjivJgw",{
-				styleMap: new OpenLayers.StyleMap({
-					externalGraphic: 'img/yelp.png',
-					pointRadius: 8
-				})
-			});
-			
-			layer6 = new OpenLayers.Layer.Social.POIProxy("Wikipedia (POIProxy)","wikipedia",{
-				styleMap: new OpenLayers.StyleMap({
-					externalGraphic: 'img/wikipedia.png',
-					pointRadius: 8
-				})
-			});
 									
 			map.addLayer(layer0);
-			map.addLayer(layer2);
-			map.addLayer(layer1);
 			map.addLayer(layer3);
-			map.addLayer(layer4);
-			map.addLayer(layer5);
-			map.addLayer(layer6);
 			
 			var p1 = new SmartPopup(map);
-			p1.addLayer('twitterPopup',layer1);
+			
 			p1.addLayer('flickrPopup',layer2);
-			p1.addLayer('gowallaPopup',layer3);
-			p1.addLayer('lfmPopup',layer4);
-			p1.addLayer('yPopup',layer5);
-			p1.addLayer('wPopup',layer6);
 			
 			map.addControl(new OpenLayers.Control.LayerSwitcher());
 			
