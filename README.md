@@ -2,15 +2,11 @@
 
 Olsocial provides OpenLayers.Layer implementations of several Social sites to use it inside OpenLayers easily.
 
-[See the DEMO](http://jacarma.github.com/olsocial/demo.html).
+[See the DEMO](http://alrocar.github.io/olsocial/demo.html).
 
 Currently supported sites are:
 
 * Flickr
-* Twitter
-* Lastfm
-* Yelp
-* POIProxy (panoramio, wikipedia, foursquare, and a lot more)
 
 # Usage
 
