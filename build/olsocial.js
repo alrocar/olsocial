@@ -747,7 +747,8 @@ OpenLayers.Layer.Social.POIProxy = OpenLayers.Class(
 		newArguments[1].protocol = new OpenLayers.Protocol.Script2({
 			url: "http://app.prodevelop.es/poiproxy/browseByExtent",
 			params: {
-				service: service
+				service: service,
+                offset: 50
 			},
 			callbackKey: "callback",
 			filterToParams: function(filter, params) {
