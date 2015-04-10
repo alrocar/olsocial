@@ -4,7 +4,6 @@ Olsocial provides OpenLayers.Layer implementations of several Social sites to us
 
 [See the DEMO](http://alrocar.github.io/olsocial/demo.html).
 
-
 Currently supported sites are:
 
 * Flickr
@@ -17,11 +16,11 @@ To load a Twitter layer and display it using a twitter icon:
 
 ```javascipt
 var layer1 = new OpenLayers.Layer.Social.Twitter("Twitter",{
-			styleMap: new OpenLayers.StyleMap({
-				externalGraphic: 'img/twitter_fugue.png',
-				pointRadius: 8
-			})
-		});
+            styleMap: new OpenLayers.StyleMap({
+                externalGraphic: 'img/twitter_fugue.png',
+                pointRadius: 8
+            })
+        });
 map.addLayer(layer1);
 ```
 
@@ -48,6 +47,5 @@ The complete list of services can be read here [POIProxy describeServices](http:
 
 In the demo.html file I used my quick and dirty popup manager (SmartPopup.js) to display info 
 balloons, using templates but I strongly recommend you to use the enhaced and brand 
->>>>>>> master
 new [OL-FeaturePopups](https://github.com/jorix/OL-FeaturePopups) control.
 
