@@ -2,18 +2,12 @@
 
 Olsocial provides OpenLayers.Layer implementations of several Social sites to use it inside OpenLayers easily.
 
-<<<<<<< HEAD
-=======
-[See the DEMO](http://jacarma.github.com/olsocial/demo.html).
+[See the DEMO](http://alrocar.github.io/olsocial/demo.html).
 
->>>>>>> master
+
 Currently supported sites are:
 
 * Flickr
-* Twitter
-* Lastfm
-* Yelp
-* POIProxy (panoramio, wikipedia, foursquare, and a lot more)
 
 # Usage
 
@@ -43,12 +37,6 @@ new OpenLayers.Layer.Social.POIProxy(layername, POIProxy_Layername, parameters);
 
 Where parameters is the optional object with properties to set on the layers of any OpenLayers.Layer.Vector [see OpenLayers documentation](http://dev.openlayers.org/releases/OpenLayers-2.10/doc/apidocs/files/OpenLayers/Layer/Vector-js.html#OpenLayers.Layer.Vector.OpenLayers.Layer.Vector)
 
-<<<<<<< HEAD
-# Popups
-
-In the demo.html file I used my quick and dirty popup manager (SmartPopup.js) to display info 
-balloons, using templates but I hardly recommend you to use the enhaced and brand 
-=======
 # POIProxy
 
 [POIProxy](https://github.com/alrocar/POIProxy) is a service to retrieve Points of Interest from any public POI service such as Foursquare, 
