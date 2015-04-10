@@ -68,7 +68,7 @@
 						
 			layer3 = new OpenLayers.Layer.Social.POIProxy("Flickr (POIProxy)","flickr",{
 				styleMap: new OpenLayers.StyleMap({
-					externalGraphic: 'img/flickr.png',
+					externalGraphic: '${image}',
 					pointRadius: 8
 				})
 			});
@@ -98,9 +98,9 @@
 			<a class="twtext" href="http://twitter.com/%from_user%/status/%id_str%">%text%</a>
 		</div>
 		<div id="flickrPopup" style="visibility:hidden; display:none">
-			<h2 class="tit">%title%</h2>
-			<a class="twuser" href="http://www.flickr.com/photos/%owner%/%id%">
-				<img src="http://farm%farm%.static.flickr.com/%server%/%id%_%secret%_m.jpg" class="flimg"/>
+			<h2 class="tit">%name%</h2>
+			<a class="twuser" href="%image%">
+				<img src="%img%" class="flimg"/>
 			</a><br/>
 			by: <a class="twuser" href="http://www.flickr.com/people/%owner%">%ownername%:</a>
 		</div>
